@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASKS Application</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Oswald:wght@400;500;600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">TASKS Application</a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- FORM TO ADD TASKS -->
+                        <form id="formTask">
+                            <div class="form-group">
+                                <input type="text" id="title" required placeholder="Title">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="description"  cols="30" rows="10" placeholder="Description"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <!-- Move the 'tasks' container to the right side -->
+            <div class="tasks-container" id="tasks"></div>
+        </div>
+    </div>
+   
+
+    <!-- Include the JavaScript file at the end of the body -->
+    <script src="todo.js"></script>
+</body>
+</html>
